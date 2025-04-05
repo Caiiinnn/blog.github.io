@@ -7,19 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="icon" type="image/png" href="assets/porticon.png">
 
-	<style type="text/css">
+	<style>
 		body {
-       	 	font-family: Arial, sans-serif;
-        	margin: 0;
-       		padding: 0;
-        	background-color: #f5f5f5;
-        	background: url(assets/nature2.jpg);
-        	background-size: cover;
-        	background-position: center;
-        	height: 100vh;
-        	display: flex;
-        	flex-direction: column;
-		}
+	        font-family: Arial, sans-serif;
+	        margin: 0;
+	        padding: 0;
+	        background-color: #f5f5f5;
+	        background: url(assets/nature2.jpg);
+	        background-size: cover;
+	        background-position: center top;
+	        background-repeat: no-repeat;
+	        background-attachment: scroll;
+	        min-height: 100%;
+	        display: flex;
+	        flex-direction: column;
+	    }
 		.main.about{
 			margin-top: 15vh;
 		}
@@ -44,7 +46,7 @@
 		}
 		.sect2.about img{
 			width: 70px;
-			max-height: 70px;
+			height: 70px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -78,6 +80,20 @@
 		#subtext{
 			color: darkgray;
 		}
+		@media (max-width: 360px){
+			.sect3{
+				
+			}
+			.sect3 h2{
+		        font-size: 1.3rem;
+		    }
+		    .profile h3{
+		        font-size: 1.2rem;
+		    }
+		    .profile p{
+		        font-size: 1.0rem;
+		    }
+		}
 	</style>
 </head>
 <body>
@@ -97,18 +113,18 @@
 			is to give knowledge and awareness to Earthlings in the fight against climate change, pollution and other factors that can destroy our environment. We believe that being aware and taking action against these factors, we can create a healthier, more sustainable future for our planet.</p>
 		</section>
 
-		<section class="sect3">
+		<section class="sect3 about">
 			<h2>Members</h2>
-			<div class="profile">
+			<div class="profile about">
             	<h3>Edrian Cain A. Villacencio</h3>
-            	<p id="subtext">College student | Junior Developer</p>
-            	<p>dadadasdadasdadasdadadaasdasdadadasdadasdas</p>
+            	<p id="subtext">College student | Junior Web Developer | Artist</p>
+            	<p>Edrian is currently a student at Cebu Eastern College, pursuing a Bachelor of Science in Information Technology (BSIT). With a passion for web development and technology, Edrian is strongly motivated by the need to protect and preserve the environment. He strives to incorporate sustainability into his projects, believing that web development can play a role in raising awareness and promoting positive environmental change through digital platforms.</p>
            	</div>
 
-           	<div class="profile">
+           	<div class="profile about">
             	<h3>Jerwenn Magsanay</h3>
-            	<p>Welcome to my simple portfolio. As a student and a passionate web developer, I want to share my personal web portfolio with you.
-            	This online showcase highlights my skills, experience, and projects in building user-friendly, and visually apprealing website and applications.
+            	<p id="subtext">College student | Web Junior Developer</p>
+            	<p>Jerwenn is a passionate web developer with a focus on creating user-friendly and visually appealing websites. In addition to his interest in technology, Jerwenn is also deeply committed to environmental preservation. He actively seeks to integrate sustainable practices into his work and aims to use technology to address environmental challenges, promoting eco-friendly solutions through innovation.
             	</p>
             </div>
 		</section>
@@ -116,7 +132,6 @@
 
 	<footer>
         <p>&copy; 2025 <a href="about.html">Pangea</a></p>
-        <br>
         <p>Developer: Edrian Cain A. Villacencio</p>
         <p>Co. Developer: Jerwenn V. Magsanay</p>
     </footer>

@@ -34,7 +34,7 @@
 #navbar .logo a {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     width: auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -62,7 +62,7 @@
 #navbar #link {
     color: #222;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 10px;
 }
@@ -79,7 +79,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 4.5em;
+    margin-bottom: 2.5em;
 }
 #welcome-section h1 {
     font-family: Tahoma, sans-serif;
@@ -90,6 +90,14 @@
     margin-top: 20vh;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.main-sub{
+    font-size: 2.5em;
+    color: yellowgreen;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 2.0em;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
 .subtitle {
     font-size: 1.5em;
     color: white;
@@ -99,6 +107,14 @@
     padding-right: 5.0em;
 
 }
+.subtitle.end{
+    font-size: 2.5em;
+    color: yellowgreen;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    padding-top: 20px;
+}
 span {
     color: white;
 }
@@ -106,7 +122,7 @@ span {
 /* -----Card Section Layout Styling----- */
 #card-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
     max-width: 1080px;
     margin: auto;
@@ -247,13 +263,24 @@ footer a:hover{
     background-color: yellowgreen;
 
 }
+/* ------Image styling----- */
+.eco{
+    margin: auto 3.5em;
+    display: block;
+}
+.eco-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
 
 /* ------Button Styling----- */
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
 }
 .action-btn {
     color: white;
@@ -280,38 +307,199 @@ footer a:hover{
 }
 
 @media (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
     #navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
         position: absolute;
     }
-
     #navbar ul {
-        margin-top: -15px;
+        display: flex;
     }
-
+    #navbar li {
+        margin: 0 1.5rem;
+    }
+    #navbar ul li {
+        margin-left: 0;
+    }
+    #navbar #link {
+        padding: 0;
+    }
     #welcome-section {
-        justify-content: center;
+        color: white;
+        align-items: flex-start;
+        margin-bottom: 2.0rem;
     }
-
     #welcome-section h1 {
-        font-size: 3.0em;
+        letter-spacing: 1.0rem;
+        font-size: 4.0em;
+        margin-left: 0.8em;
+        margin-top: 10vh;
+        margin-bottom: 1.0rem;
     }
-
-    #welcome-section p {
-        font-size: 1.0rem;
-        text-align: justify;
+    .subtitle {
+        font-size: 2.0rem;
+        margin-left: 3.5rem;
+        padding-right: 3.5rem;
     }
-
-    .card-box {
+    #card-box {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card {
+        background: #222;
+        text-decoration: none;
+        color: yellowgreen;
+        display: block;
+        padding: 15px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 5px;
+    }
+    .card img{
+        height: 250px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .card h3 {
+        padding-top: 10px;
+        font-size: 2.0em;
+        margin-bottom: 10px;
+    }
+    .card p {
+        font-size: 1.5rem;
+    }
+    
+}
+@media (max-width: 360px){
+    #navbar {
+        display: flex;
+        position: absolute;
+    }
+    #navbar ul {
+        display: flex;
+    }
+    #navbar li {
+        margin: 0 1.0rem;
+    }
+    #navbar ul li {
+        margin-left: 0;
+    }
+    #navbar #link {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    #navbar .logo a {
+        font-size: 1.0em;
+    }
+    .logo img {
+        width: 20px;
+        margin-left: 10px;
+    }
+    #welcome-section {
+        margin-bottom: 2.0rem;
+        margin-top: 5vh;
+    }
+    #welcome-section h1 {
+        letter-spacing: 0;
+        font-size: 2.0em;
+        margin-left: 1.0em;
+        margin-bottom: 1.0rem;
+    }
+    .subtitle {
+        font-size: 1.0rem;
+        margin-left: 2.0rem;
+    }
+    .main-sub{
+        font-size: 1.0rem;
+    }
+    .subtitle.end{
+        padding-top: 1.0rem;
+        font-size: 1.2rem;
+    }
+    #card-box {
+        max-width: 350px;
+        width: 300px;
+    }
+    .card img{
+        height: 200px;
+    }
+    .card h3 {
+        font-size: 1.2rem;
+    }
+    .card p {
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+    .main{
+        padding-left: 1em;
+       padding-right: 1em;
+    }
+    .sect{
+        margin-bottom: 1.0em;
+    }
+    .sect h2{
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .sect p{
+        font-size: 1.0rem;
+    }
+    .sect ul{
+        background-color: #222;
+        padding: 15px;
+    }
+    .sect ul li{
+        font-size: 1rem;
+    }
+    .sect ul strong{
+        display: flex;
+        justify-content: flex-start;
+        color: yellowgreen;
+        padding-bottom: 5px;
+    }
+    .sect2{
+        padding-top: 1.5em;
+    }
+    .sect2 h2{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .sect2 #sub{
+        font-size: 1.0rem;
+    }
+    .card.sol, .sus{
+        padding: 1.2rem;
+    }
+    .card.sol h3{
+        text-align: center;
+        font-size: 1.1rem;
+        letter-spacing: 0;
+    }
+    .card.sol p{
+        padding-top: 4px;
+        font-size: 1.0rem;
+    }
+    .card.sus h3{
+        text-align: center;
+        font-size: 1.1rem;
+        letter-spacing: 0;
+    }
+    .card.sus p{
+        padding-top: 4px;
+        font-size: 1.0rem;
     }
 
-    .social-links a {
-        display: block;
-        margin: 10px auto;
+    .action-button img{
+        width: 30px;
+        height: 30px;
     }
 }
