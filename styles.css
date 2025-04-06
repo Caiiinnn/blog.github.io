@@ -119,7 +119,7 @@ span {
     color: white;
 }
 
-/* -----Card Section Layout Styling----- */
+/* -----Card Layout Styling----- */
 #card-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -129,7 +129,7 @@ span {
     margin-bottom: 20px;
 }
 .card {
-    background: #222;
+    background: rgba(0, 0, 0, 0.9);
     text-decoration: none;
     color: yellowgreen;
     display: block;
@@ -232,7 +232,7 @@ footer a:hover{
     padding-bottom: 1.0rem;
 }
 .card.sol{
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 8px;
@@ -250,10 +250,13 @@ footer a:hover{
 
 /* -----Impact Page Styling----- */
 .sect.impact strong{
-    color: yellow;
+    color: white;
 }
 .sect.impact li{
     padding-bottom: 20px;
+}
+.sect.impact li:hover{
+    color: yellowgreen;
 }
 .card.sus h3{
     font-size: 1.3rem;
@@ -267,6 +270,9 @@ footer a:hover{
 .eco{
     margin: auto 3.5em;
     display: block;
+}
+.eco.eco2{
+    margin: auto 0.2em;
 }
 .eco-img{
     max-width: 100%;
@@ -421,6 +427,7 @@ footer a:hover{
     .subtitle.end{
         padding-top: 1.0rem;
         font-size: 1.2rem;
+        text-align: center;
     }
     #card-box {
         max-width: 350px;
@@ -495,9 +502,14 @@ footer a:hover{
     }
     .card.sus p{
         padding-top: 4px;
-        font-size: 1.0rem;
+        font-size: 0.9rem;
     }
-
+    .eco{
+        margin: auto 1.0em;
+    }
+    .eco.eco2{
+        margin: auto;
+    }
     .action-button img{
         width: 30px;
         height: 30px;
